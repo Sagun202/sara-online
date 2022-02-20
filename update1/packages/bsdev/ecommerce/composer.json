@@ -1,0 +1,37 @@
+{
+    "name": "bsdev/ecommerce",
+    "license": "MIT",
+    "version": "1.0",
+    "description": "Simple package for mini ecommerce",
+    "authors": [
+        {
+            "name": "Bharat Shrestha",
+            "email": "bharatstha97@gmail.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "src/helper/helper.php"
+        ],
+        "psr-4": {
+            "Bsdev\\Ecommerce\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.4",
+        "bsdev/theme": "^1.0",
+        "livewire/livewire": "^2.5",
+        "maatwebsite/excel": "^3.1"
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bsdev\\Ecommerce\\EcommerceServiceProvider"
+            ],
+            "aliases": {
+                "Ecommerce": "Bsdev\\Ecommerce\\Facades\\EcommerceFacade"
+            }
+        }
+    }
+}

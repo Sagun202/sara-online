@@ -1,0 +1,32 @@
+<?php
+return [
+    'packages' => [
+        'Theme',
+        'Ecommerce',
+        'Slider',
+        'Team',
+        'Post',
+        'Shipping',
+    ],
+    'modules' => [
+        'user',
+        'role',
+        'testimonial',
+        'subscription',
+        'page',
+        'post',
+        'team',
+        'slider',
+        'menu',
+        'faq',
+        'message',
+        'brand',
+        'category',
+        'custom_field',
+        'product',
+        'order',
+        'advertisement',
+        'attribute',
+        'shipping',
+    ],
+];

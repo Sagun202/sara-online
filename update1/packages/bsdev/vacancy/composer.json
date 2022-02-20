@@ -1,0 +1,33 @@
+{
+    "name": "bsdev/vacancy",
+    "license": "MIT",
+    "version": "1.0",
+    "description": "Simple package for Job",
+    "authors": [
+        {
+            "name": "Bharat Shrestha",
+            "email": "bharatstha97@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Bsdev\\Vacancy\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.4",
+        "bsdev/vacancy": "^1.0",
+        "livewire/livewire": "^2.5"
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bsdev\\Vacancy\\VacancyServiceProvider"
+            ],
+            "aliases": {
+                "Vacancy": "Bsdev\\Vacancy\\Facades\\VacancyFacade"
+            }
+        }
+    }
+}

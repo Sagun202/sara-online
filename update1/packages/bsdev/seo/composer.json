@@ -1,0 +1,32 @@
+{
+    "name": "bsdev/seo",
+    "description": "Simple library for seo",
+    "license": "MIT",
+    "type": "library",
+    "version": "1.0",
+    "authors": [
+        {
+            "name": "Bharat Shrestha",
+            "email": "bharatstha97@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Bsdev\\Seo\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.4"
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bsdev\\Seo\\SeoServiceProvider"
+            ],
+            "aliases": {
+                "Seo": "Bsdev\\Seo\\Facades\\SeoFacade"
+            }
+        }
+    }
+}

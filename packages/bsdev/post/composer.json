@@ -1,0 +1,37 @@
+{
+    "name": "bsdev/post",
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0",
+    "authors": [
+        {
+            "name": "Bharat Shrestha",
+            "email": "bharatstha97@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "bsdev/theme": "^1.0",
+        "cviebrock/eloquent-sluggable": "^8.0",
+        "barryvdh/laravel-snappy": "^0.4.8",
+        "yajra/laravel-datatables-buttons": "^4.0",
+        "yajra/laravel-datatables-html": "^4.0",
+        "yajra/laravel-datatables-oracle": "~9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bsdev\\Post\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bsdev\\Post\\PostServiceProvider"
+            ],
+            "aliases": {
+                "Post": "Bsdev\\Post\\Facades\\PostFacade"
+            }
+        }
+    }
+}

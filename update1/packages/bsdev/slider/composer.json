@@ -1,0 +1,32 @@
+{
+    "name": "bsdev/slider",
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0",
+    "authors": [
+        {
+            "name": "Bharat Shrestha",
+            "email": "bharatstha97@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "bsdev/theme": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bsdev\\Slider\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bsdev\\Slider\\SliderServiceProvider"
+            ],
+            "aliases": {
+                "Slider": "Bsdev\\Slider\\Facades\\SliderFacade"
+            }
+        }
+    }
+}
