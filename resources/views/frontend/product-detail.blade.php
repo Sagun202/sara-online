@@ -25,28 +25,7 @@
 
 
 <main class="main" style="background:white;">
-    <nav aria-label="breadcrumb" class="breadcrumb-nav border-0 mb-0">
-        <div class="container d-flex align-items-center">
-            <ol class="breadcrumb">
-               
-                    <li class="home">
-                        <a title="Go to Home Page" href="{{ route('index') }}">Home</a><span>&raquo;</span>
-                    </li>
-                    &nbsp;&nbsp;&nbsp;
-                    @if(count($product->categories)>0)
-                    <li class="">
-                        <a
-                            href="{{ route('category',$product->categories->first()->slug??'') }}">{{ $product->categories->first()->name??'' }}</a><span>&raquo;</span>
-                    </li>
-                    &nbsp;&nbsp;&nbsp;
-                    @endif
-                    <li><strong>{{ $product->title }}</strong></li>
-                
-            </ol>
-
-         
-        </div><!-- End .container -->
-    </nav><!-- End .breadcrumb-nav -->
+    
     <br>
 
     <div class="page-content">

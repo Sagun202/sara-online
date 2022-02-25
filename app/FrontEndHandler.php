@@ -18,6 +18,7 @@ use Slider;
 class FrontEndHandler
 {
 
+    
     public function banner()
     {
         $sliders = Slider::getSliders();

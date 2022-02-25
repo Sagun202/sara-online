@@ -65,15 +65,14 @@
             <div class="col-7">
                 <div class="header-search header-search-extended header-search-visible header-search-no-radius d-none d-lg-block">
                     <a href="#" class="search-toggle" role="button"><i class="icon-search"></i></a>
-                    <form action="#" method="get">
+                    <form action="{{route('search')}}" method="get">
                         <div class="header-search-wrapper search-wrapper-wide">
                             
                             <label for="q" class="sr-only">Search</label>
-                            <input type="search" class="form-control" name="q" id="q" placeholder="Search product ..." required>
+                            <input  type="search" class="form-control" name="q" id="q" placeholder="Search product ..." required>
                             <div class="select-custom">
                                 <select id="cat" name="cat">
                                     <option value="">All Categories</option>
-
                                     @foreach ($categories as $category)
                                     <option value="{{$category->id}}">{{$category->name}} </option>
                                     @endforeach

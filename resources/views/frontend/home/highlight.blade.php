@@ -7,12 +7,8 @@
 
             <div class="col-2">
                <center>
-                  <button class=" rounded-pill btn-primary" style="background: #001768; color:white; font-size:20px; font-weight:600;"> OUR BRANDS</button>
-
-                  
-               </center>
-
-               
+                  <button class=" rounded-pill btn-primary" style="background: #001768; color:white; font-size:20px; font-weight:600;"> OUR BRANDS</button>  
+               </center> 
             </div>
             <div class="col-3">
                <hr style="  background: #001768; height:2px;">
